@@ -11,13 +11,14 @@ namespace Ejercicio_Git
         static void Main(string[] args)
         {
             double resultado, num1=10, num2=20;
-
+            int opcion = 1;
+            do { 
             Console.WriteLine("1. Suma");
             Console.WriteLine("2. Resta");
             Console.WriteLine("3. Multiplicacion");
 
             Console.WriteLine("Elige una opcion ");
-            int opcion = Convert.ToInt32(Console.ReadLine());
+            opcion = Convert.ToInt32(Console.ReadLine());
 
             switch (opcion)
             {
@@ -36,7 +37,7 @@ namespace Ejercicio_Git
 
             }
 
-
+            }while(opcion != 4);
 
         }
         static double Suma(double num1, double num2) {
